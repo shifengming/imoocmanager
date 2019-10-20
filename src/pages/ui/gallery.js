@@ -21,11 +21,10 @@ export default class Gallery extends React.Component{
             ['16.png', '17.png', '18.png', '19.png', '20.png'],
             ['21.png', '22.png', '23.png', '24.png', '25.png']
         ]
-        const imgList = imgs.map((list) => list.map((item,index)  => 
+        const imgList = imgs.map((list) => list.map((item) => 
             <Card
-                key={index}
                 style={{marginBottom:10}}
-                cover={<img src={'/gallery/'+item}  onClick={()=>this.openGallery(item)}/>}
+                cover={<img src={'/gallery/'+item} onClick={()=>this.openGallery(item)}/>}
             >
                 <Card.Meta
                     title="React Admin"

@@ -1,16 +1,12 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+export default class Main extends React.Component {
 
-export default class Main extends React.Component{
-
-    render(){
+    render() {
         return (
-                <div>
-                    this is main page,
-                    <Link to="/main/a">嵌套路由</Link>
-                    <hr/>
-                    {this.props.children}
-                </div>
+            <div>
+                this is main page.
+            </div>
         );
     }
 }

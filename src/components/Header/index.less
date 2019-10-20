@@ -1,7 +1,6 @@
-@import './../../resource/default.less';
-
-.header {
-    background-color: #ffffff;
+@import './../../style/default.less';
+.header{
+    background-color: @colorM;
     .header-top{
         height: 60px;
         line-height: 60px;
@@ -23,22 +22,22 @@
             margin-left: 40px;
         }
     }
-    .breadcrumb {
+    .breadcrumb{
         height: 40px;
         line-height: 40px;
         padding: 0 20px;
         border-top: 1px solid #f9c700;
-        .breadcrumb-title {
+        .breadcrumb-title{
             text-align: center;
             font-size: @fontC;
-            &:after {
+            &:after{
                 position: absolute;
                 content: '';
-                left: 73px;
-                top: 39px;
-                border-top: 9px solid #fff;
+                left:73px;
+                top:39px;
+                border-top: 9px solid @colorM;
                 border-left: 12px solid transparent;
-                border-right: 12px solid transparent; 
+                border-right: 12px solid transparent;
             }
         }
         .weather{
@@ -60,15 +59,9 @@
         }
     }
 }
-
 .simple-page{
-    .header-top{
-      background:#1890ff;
-      color: #ffffff;
-    }
-    .ant-form,
-    .ant-col-12,
-    .weather{
-      display:none;
-    }
+  .header-top{
+    background:#1890ff;
+    color:@colorM;
   }
+}
